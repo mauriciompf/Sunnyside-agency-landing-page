@@ -25,42 +25,68 @@
     />
     <title>Frontend Mentor | Sunnyside agency landing page</title>
   </head>
-  <body class="text-[18px] bg-[#3EBFFF] font-barlow">
-    <header class="m-auto w-[95%] py-6">
-      <div class="flex justify-between items-center">
-        <div>
-          <img src="./assets/images/logo.svg" alt="Sunnyside" />
-        </div>
-        <div class="md:flex md:items-center md:gap-12">
-          <ul class="flex gap-12 font-[600] text-neu-white">
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Projects</a></li>
-          </ul>
-          <button
-            class="text-neu-very-dark-desaturated-blue bg-neu-white py-4 px-6 rounded-[2vw] font-frauces uppercase"
-            type="button"
-          >
-            Contact
+  <body class="text-[18px] font-barlow overflow-x-hidden">
+    <section
+      class="bg-[#3EBFFF] md:bg-[url('../images/desktop/image-header.jpg')] bg-[url(../images/mobile/image-header.jpg)] bg-cover bg-center h-screen"
+    >
+      <header class="m-auto w-[95%] py-6">
+        <div class="flex justify-between items-center">
+          <div>
+            <img src="./assets/images/logo.svg" alt="Sunnyside" />
+          </div>
+          <div class="hidden md:flex md:items-center md:gap-12">
+            <ul class="flex gap-12 font-[600] text-neu-white">
+              <li><a href="#">About</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Projects</a></li>
+            </ul>
+            <button
+              class="text-neu-very-dark-desaturated-blue bg-neu-white py-[0.7rem] px-4 rounded-[2vw] font-[700] font-frauces text-[.8rem] uppercase hover:bg-[#78d2ff] hover:text-neu-white focus:bg-[#78d2ff] focus:text-neu-white transition-colors"
+              type="button"
+            >
+              Contact
+            </button>
+          </div>
+          <button class="md:hidden" type="button" aria-label="Open menu">
+            <img
+              src="./assets/images/icon-hamburger.svg"
+              alt="hamburger button"
+            />
           </button>
         </div>
+      </header>
+      <div class="grid place-items-center md:h-[54%] h-[70%] mx-4">
+        <h1
+          class="uppercase md:text-6xl text-[2.5rem] text-center tracking-[0.5rem] md:tracking-widest font-frauces text-neu-white"
+        >
+          We are creatives
+        </h1>
+        <img
+          class="animate-bounce"
+          src="./assets/images/icon-arrow-down.svg"
+          alt=""
+        />
       </div>
-    </header>
+    </section>
     <main>
       <div>
-        <section>
-          <h1>We are creatives</h1>
-          <img src="./assets/images/desktop/image-header.jpg" alt="" />
-        </section>
-        <section>
-          <article>
-            <h3>Transform your brand</h3>
-            <p>
-              We are a full-service creative agency specializing in helping
-              brands grow fast. Engage your clients through compelling visuals
-              that do most of the marketing for you.
-            </p>
-            <a href="#">Learn more</a>
+        <section class="grid grid-cols-2">
+          <article class="grid place-items-center w-[60%] h-min m-auto">
+            <div class="grid gap-6">
+              <h3 class="font-frauces text-4xl font-bold">
+                Transform your brand
+              </h3>
+              <p class="text-base">
+                We are a full-service creative agency specializing in helping
+                brands grow fast. Engage your clients through compelling visuals
+                that do most of the marketing for you.
+              </p>
+              <a
+                class="w-max font-frauces uppercase relative after:content-[' '] after:absolute after:w-full after:scale-x-0 after:h-[12px] after:bottom-0 after:left-0 after:bg-pri-yellow after:origin-bottom-left after:transition-transform after:-z-10 after:rounded-[2vw] hover:after:scale-x-100 hover:after:origin-bottom-left"
+                href="#"
+                >Learn more</a
+              >
+            </div>
           </article>
           <picture>
             <source
