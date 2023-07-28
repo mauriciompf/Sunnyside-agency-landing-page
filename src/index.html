@@ -34,7 +34,7 @@
           <div>
             <img src="./assets/images/logo.svg" alt="Sunnyside" />
           </div>
-          <div class="hidden md:flex md:items-center md:gap-12">
+          <nav class="hidden md:flex md:items-center md:gap-12">
             <ul class="flex gap-12 font-[600] text-neu-white">
               <li><a href="#">About</a></li>
               <li><a href="#">Services</a></li>
@@ -46,7 +46,7 @@
             >
               Contact
             </button>
-          </div>
+          </nav>
           <button class="md:hidden" type="button" aria-label="Open menu">
             <img
               src="./assets/images/icon-hamburger.svg"
@@ -86,7 +86,7 @@
                 that do most of the marketing for you.
               </p>
               <a
-                class="font-extrabold text-neu-very-dark-desaturated-blue w-max font-frauces uppercase relative after:content-[' '] before-[' '] before:absolute before:w-[145px] before:left-[-0.5rem] before:rounded-[2vw] before:h-[12px] before:bottom-0 before:bg-pri-yellow before:-z-10 before:opacity-30 after:absolute after:w-[145px] after:scale-x-0 after:h-[12px] after:bottom-0 after:left-[-0.5rem] after:bg-pri-yellow after:origin-bottom-left after:transition-transform after:-z-10 after:rounded-[2vw] hover:after:scale-x-100 hover:after:origin-bottom-left"
+                class="font-extrabold text-neu-very-dark-desaturated-blue w-max font-frauces uppercase relative after:content-[' '] before-[' '] before:absolute before:w-[145px] before:left-[-0.5rem] before:rounded-[2vw] before:h-[12px] before:bottom-0 before:bg-pri-yellow before:-z-10 before:opacity-30 after:absolute after:w-[145px] after:scale-x-0 after:h-[12px] after:bottom-0 after:left-[-0.5rem] after:bg-pri-yellow after:origin-bottom-left after:transition-transform after:-z-10 after:rounded-[2vw] hover:after:scale-x-100 focus:after:scale-x-100 outline-transparent focus:after:origin-bottom-left hover:after:origin-bottom-left"
                 href="#"
                 >Learn more</a
               >
@@ -131,7 +131,7 @@
                 extend your brand in digital places.
               </p>
               <a
-                class="font-extrabold text-neu-very-dark-desaturated-blue w-max font-frauces uppercase relative after:content-[' '] before-[' '] before:absolute before:w-[145px] before:left-[-0.5rem] before:rounded-[2vw] before:h-[12px] before:bottom-0 before:bg-pri-soft-red before:-z-10 before:opacity-30 after:absolute after:w-[145px] after:scale-x-0 after:h-[12px] after:bottom-0 after:left-[-0.5rem] after:bg-pri-soft-red after:origin-bottom-right after:transition-transform after:-z-10 after:rounded-[2vw] hover:after:scale-x-100 hover:after:origin-bottom-right"
+                class="font-extrabold text-neu-very-dark-desaturated-blue w-max font-frauces uppercase relative after:content-[' '] before-[' '] before:absolute before:w-[145px] before:left-[-0.5rem] before:rounded-[2vw] before:h-[12px] before:bottom-0 before:bg-pri-soft-red before:-z-10 before:opacity-30 after:absolute after:w-[145px] after:scale-x-0 after:h-[12px] after:bottom-0 after:left-[-0.5rem] after:bg-pri-soft-red after:origin-bottom-right after:transition-transform after:-z-10 after:rounded-[2vw] hover:after:scale-x-100 focus:after:scale-x-100 outline-transparent focus:after:origin-bottom-right hover:after:origin-bottom-right"
                 href="#"
                 >Learn more</a
               >
@@ -144,11 +144,11 @@
               class="w-[95%] md:w-[50%] text-center absolute bottom-16 translate-x-[-50%] left-[50%]"
             >
               <h3
-                class="font-frauces font-extrabold text-2xl mb-6 text-neu-very-dark-desaturated-blue"
+                class="font-frauces font-extrabold text-2xl mb-6 text-pri-dark-blue"
               >
                 Graphic design
               </h3>
-              <p class="text-base text-neu-very-dark-desaturated-blue">
+              <p class="text-base text-pri-dark-blue">
                 Great design makes you memorable. We deliver artwork that
                 underscores your brand message and captures potential clients’
                 attention.
@@ -162,57 +162,89 @@
               class="w-[95%] text-base md:w-[50%] text-center absolute bottom-16 translate-x-[-50%] left-[50%]"
             >
               <h3
-                class="font-frauces font-extrabold text-2xl mb-6 text-neu-very-dark-desaturated-blue"
+                class="font-frauces font-extrabold text-2xl mb-6 text-pri-dark-blue"
               >
                 Photography
               </h3>
-              <p class="text-base text-neu-very-dark-desaturated-blue">
+              <p class="text-base text-pri-dark-blue">
                 Increase your credibility by getting the most stunning,
                 high-quality photos that improve your business image.
               </p>
             </div>
           </article>
         </section>
-        <section>
-          <h3>Client testimonials</h3>
-          <div>
-            <img src="./assets/images/image-emily.jpg" alt="perfil Emily" />
-            <p>
-              We put our trust in Sunnyside and they delivered, making sure our
-              needs were met and deadlines were always hit.
-            </p>
-            <div>
-              <strong>Emily R.</strong>
-              <span>Marketing Director</span>
-            </div>
-          </div>
-          <div>
-            <img src="./assets/images/image-thomas.jpg" alt="perfil Thomas" />
-            <p>
-              Sunnyside’s enthusiasm coupled with their keen interest in our
-              brand’s success made it a satisfying and enjoyable experience.
-            </p>
-            <div>
-              <strong>Thomas S.</strong>
-              <span>Chief Operating Officer</span>
-            </div>
-          </div>
-          <div>
-            <img
-              src="./assets/images/image-jennie.jpg"
-              alt="perfil Jennie F."
-            />
-            <p>
-              Incredible end result! Our sales increased over 400% when we
-              worked with Sunnyside. Highly recommended!
-            </p>
-            <div>
-              <strong>Jennie F.</strong>
-              <span>Business Owner</span>
+        <section
+          class="grid place-items-center min-h-[90vh] max-[970px]:my-12 bg-[#FFFCF6]"
+        >
+          <div class="text-center grid gap-16 w-[85%]">
+            <h3
+              class="font-frauces font-extrabold text-neu-grayish-blue md:text-xl text-[1rem] tracking-[0.3rem] uppercase"
+            >
+              Client testimonials
+            </h3>
+            <div class="grid md:grid-cols-3 gap-[4.5rem] items-baseline">
+              <figure class="grid gap-10 place-items-center">
+                <img
+                  class="rounded-[50%] w-[62px]"
+                  src="./assets/images/image-emily.jpg"
+                  alt="perfil Emily"
+                />
+                <blockquote>
+                  <p class="text-lg text-pri-dark-blue">
+                    We put our trust in Sunnyside and they delivered, making
+                    sure our needs were met and deadlines were always hit.
+                  </p>
+                </blockquote>
+                <figcaption class="grid gap-[0.5rem]">
+                  <strong class="font-frauces font-extrabold">Emily R.</strong>
+                  <span class="text-[.9rem] text-pri-dark-blue"
+                    >Marketing Director</span
+                  >
+                </figcaption>
+              </figure>
+              <figure class="grid gap-10 place-items-center">
+                <img
+                  class="rounded-[50%] w-[62px]"
+                  src="./assets/images/image-thomas.jpg"
+                  alt="perfil Thomas"
+                />
+                <blockquote>
+                  <p class="text-lg text-pri-dark-blue">
+                    Sunnyside’s enthusiasm coupled with their keen interest in
+                    our brand’s success made it a satisfying and enjoyable
+                    experience.
+                  </p>
+                </blockquote>
+                <figcaption class="grid gap-[0.5rem]">
+                  <strong class="font-frauces font-extrabold">Thomas S.</strong>
+                  <span class="text-[.9rem] text-pri-dark-blue"
+                    >Chief Operating Officer</span
+                  >
+                </figcaption>
+              </figure>
+              <figure class="grid gap-10 place-items-center">
+                <img
+                  class="rounded-[50%] w-[62px]"
+                  src="./assets/images/image-jennie.jpg"
+                  alt="perfil Jennie F."
+                />
+                <blockquote>
+                  <p class="text-lg text-pri-dark-blue">
+                    Incredible end result! Our sales increased over 400% when we
+                    worked with Sunnyside. Highly recommended!
+                  </p>
+                </blockquote>
+                <figcaption class="grid gap-[0.5rem]">
+                  <strong class="font-frauces font-extrabold">Jennie F.</strong>
+                  <span class="text-[.9rem] text-pri-dark-blue"
+                    >Business Owner</span
+                  >
+                </figcaption>
+              </figure>
             </div>
           </div>
         </section>
-        <section>
+        <section class="grid grid-cols-2 md:grid-cols-4">
           <picture>
             <source
               srcset="./assets/images/desktop/image-gallery-milkbottles.jpg"
@@ -254,20 +286,83 @@
         </section>
       </div>
     </main>
-    <footer>
-      <div>
-        <img src="./assets/images/logo.svg" alt="Sunnyside" />
-        <ul>
-          <li>About</li>
-          <li>Services</li>
-          <li>Projects</li>
-          <li>Contact</li>
-        </ul>
-        <div>
-          <img src="./assets/images/icon-facebook.svg" alt="facebook" />
-          <img src="./assets/images/icon-instagram.svg" alt="instagram" />
-          <img src="./assets/images/icon-twitter.svg" alt="twitter" />
-          <img src="./assets/images/icon-pinterest.svg" alt="pinterest" />
+    <footer class="bg-[#68B1A2]">
+      <div
+        class="text-pri-dark-desaturated-cyan grid place-items-center gap-16 py-16"
+      >
+        <div class="grid place-items-center gap-8">
+          <img
+            class="w-[170px]"
+            src="./assets/images/logo-footer.svg"
+            alt="Sunnyside"
+          />
+          <ul class="flex gap-12">
+            <li>
+              <a
+                class="outline-none transition-colors hover:text-neu-white focus:text-neu-white"
+                href="#"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                class="outline-none transition-colors hover:text-neu-white focus:text-neu-white"
+                href="#"
+                >Services</a
+              >
+            </li>
+            <li>
+              <a
+                class="outline-none transition-colors hover:text-neu-white focus:text-neu-white"
+                href="#"
+                >Projects</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="flex gap-8">
+          <a
+            class="outline-none transition-colors hover:text-neu-white focus:text-neu-white"
+            href="#"
+            aria-hidden="true"
+            ><img
+              class=""
+              src="./assets/images/icon-facebook.svg"
+              alt="facebook"
+          /></a>
+          <a
+            class="outline-none transition-colors hover:text-neu-white focus:text-neu-white"
+            href="#"
+            aria-hidden="true"
+          >
+            <img
+              class=""
+              src="./assets/images/icon-instagram.svg"
+              alt="instagram"
+            />
+          </a>
+          <a
+            class="outline-none transition-colors hover:text-neu-white focus:text-neu-white"
+            href="#"
+            aria-hidden="true"
+          >
+            <img
+              class=""
+              src="./assets/images/icon-twitter.svg"
+              alt="twitter"
+            />
+          </a>
+          <a
+            class="outline-none transition-colors hover:text-neu-white focus:text-neu-white"
+            href="#"
+            aria-hidden="true"
+          >
+            <img
+              class=""
+              src="./assets/images/icon-pinterest.svg"
+              alt="pinterest"
+            />
+          </a>
         </div>
       </div>
     </footer>
