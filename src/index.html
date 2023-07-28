@@ -70,82 +70,107 @@
     </section>
     <main>
       <div>
-        <section class="grid grid-cols-2">
-          <article class="grid place-items-center w-[60%] h-min m-auto">
-            <div class="grid gap-6">
-              <h3 class="font-frauces text-4xl font-bold">
+        <section class="grid md:grid-cols-2">
+          <article
+            class="min-[768px]:my-4 grid place-items-center md:text-left md:w-[60%] h-min m-auto min-[881px]:my-auto my-16 w-[80%] text-center"
+          >
+            <div class="grid gap-6 md:place-items-stretch place-items-center">
+              <h3
+                class="font-frauces md:text-4xl text-[2rem] font-extrabold leading-9 text-neu-very-dark-desaturated-blue"
+              >
                 Transform your brand
               </h3>
-              <p class="text-base">
+              <p class="text-base text-neu-dark-grayish-blue">
                 We are a full-service creative agency specializing in helping
                 brands grow fast. Engage your clients through compelling visuals
                 that do most of the marketing for you.
               </p>
               <a
-                class="w-max font-frauces uppercase relative after:content-[' '] after:absolute after:w-full after:scale-x-0 after:h-[12px] after:bottom-0 after:left-0 after:bg-pri-yellow after:origin-bottom-left after:transition-transform after:-z-10 after:rounded-[2vw] hover:after:scale-x-100 hover:after:origin-bottom-left"
+                class="font-extrabold text-neu-very-dark-desaturated-blue w-max font-frauces uppercase relative after:content-[' '] before-[' '] before:absolute before:w-[145px] before:left-[-0.5rem] before:rounded-[2vw] before:h-[12px] before:bottom-0 before:bg-pri-yellow before:-z-10 before:opacity-30 after:absolute after:w-[145px] after:scale-x-0 after:h-[12px] after:bottom-0 after:left-[-0.5rem] after:bg-pri-yellow after:origin-bottom-left after:transition-transform after:-z-10 after:rounded-[2vw] hover:after:scale-x-100 hover:after:origin-bottom-left"
                 href="#"
                 >Learn more</a
               >
             </div>
           </article>
-          <picture>
+          <picture class="max-md:row-start-1">
             <source
               srcset="./assets/images/desktop/image-transform.jpg"
-              media="(min-width: 992px)"
+              media="(min-width: 768px)"
               type="image/jpeg"
             />
-            <img src="./assets/images/mobile/image-transform.jpg" alt="" />
+            <img
+              class="h-full object-cover"
+              src="./assets/images/mobile/image-transform.jpg"
+              alt=""
+            />
           </picture>
           <picture>
             <source
               srcset="./assets/images/desktop/image-stand-out.jpg"
-              media="(min-width: 992px)"
+              media="(min-width: 768px)"
               type="image/jpeg"
             />
-            <img src="./assets/images/mobile/image-stand-out.jpg" alt="" />
+            <img
+              class="h-full object-cover"
+              src="./assets/images/mobile/image-stand-out.jpg"
+              alt=""
+            />
           </picture>
-          <article>
-            <h3>Stand out to the right audience</h3>
-            <p>
-              Using a collaborative formula of designers, researchers,
-              photographers, videographers, and copywriters, we’ll build and
-              extend your brand in digital places.
-            </p>
-            <a href="#">Learn more</a>
+          <article
+            class="min-[768px]:my-4 grid place-items-center md:text-left md:w-[60%] h-min m-auto min-[881px]:my-auto my-16 w-[80%] text-center"
+          >
+            <div class="grid gap-6 md:place-items-stretch place-items-center">
+              <h3
+                class="font-frauces md:text-4xl text-[2rem] leading-9 text-neu-very-dark-desaturated-blue font-extrabold"
+              >
+                Stand out to the right audience
+              </h3>
+              <p class="text-base text-neu-very-dark-grayish-blue">
+                Using a collaborative formula of designers, researchers,
+                photographers, videographers, and copywriters, we’ll build and
+                extend your brand in digital places.
+              </p>
+              <a
+                class="font-extrabold text-neu-very-dark-desaturated-blue w-max font-frauces uppercase relative after:content-[' '] before-[' '] before:absolute before:w-[145px] before:left-[-0.5rem] before:rounded-[2vw] before:h-[12px] before:bottom-0 before:bg-pri-soft-red before:-z-10 before:opacity-30 after:absolute after:w-[145px] after:scale-x-0 after:h-[12px] after:bottom-0 after:left-[-0.5rem] after:bg-pri-soft-red after:origin-bottom-right after:transition-transform after:-z-10 after:rounded-[2vw] hover:after:scale-x-100 hover:after:origin-bottom-right"
+                href="#"
+                >Learn more</a
+              >
+            </div>
           </article>
-          <article>
-            <picture>
-              <source
-                srcset="./assets/images/desktop/image-graphic-design.jpg"
-                media="(min-width: 992px)"
-                type="image/jpeg"
-              />
-              <img
-                src="./assets/images/mobile/image-graphic-design.jpg"
-                alt=""
-              />
-            </picture>
-            <h3>Graphic design</h3>
-            <p>
-              Great design makes you memorable. We deliver artwork that
-              underscores your brand message and captures potential clients’
-              attention.
-            </p>
+          <article
+            class="md:bg-[url(../images/desktop/image-graphic-design.jpg)] bg-[url(../images/mobile/image-graphic-design.jpg)] bg-cover bg-center h-[600px] relative"
+          >
+            <div
+              class="w-[95%] md:w-[50%] text-center absolute bottom-16 translate-x-[-50%] left-[50%]"
+            >
+              <h3
+                class="font-frauces font-extrabold text-2xl mb-6 text-neu-very-dark-desaturated-blue"
+              >
+                Graphic design
+              </h3>
+              <p class="text-base text-neu-very-dark-desaturated-blue">
+                Great design makes you memorable. We deliver artwork that
+                underscores your brand message and captures potential clients’
+                attention.
+              </p>
+            </div>
           </article>
-          <article>
-            <picture>
-              <source
-                srcset="./assets/images/desktop/image-photography.jpg"
-                media="(min-width: 992px)"
-                type="image/jpeg"
-              />
-              <img src="./assets/images/mobile/image-photography.jpg" alt="" />
-            </picture>
-            <h3>Photography</h3>
-            <p>
-              Increase your credibility by getting the most stunning,
-              high-quality photos that improve your business image.
-            </p>
+          <article
+            class="md:bg-[url(../images/desktop/image-photography.jpg)] bg-[url(../images/mobile/image-photography.jpg)] bg-cover bg-center h-[600px] relative"
+          >
+            <div
+              class="w-[95%] text-base md:w-[50%] text-center absolute bottom-16 translate-x-[-50%] left-[50%]"
+            >
+              <h3
+                class="font-frauces font-extrabold text-2xl mb-6 text-neu-very-dark-desaturated-blue"
+              >
+                Photography
+              </h3>
+              <p class="text-base text-neu-very-dark-desaturated-blue">
+                Increase your credibility by getting the most stunning,
+                high-quality photos that improve your business image.
+              </p>
+            </div>
           </article>
         </section>
         <section>
@@ -191,7 +216,7 @@
           <picture>
             <source
               srcset="./assets/images/desktop/image-gallery-milkbottles.jpg"
-              media="(min-width: 992px)"
+              media="(min-width: 768px)"
               type="image/jpeg"
             />
             <img
@@ -202,7 +227,7 @@
           <picture>
             <source
               srcset="./assets/images/desktop/image-gallery-orange.jpg"
-              media="(min-width: 992px)"
+              media="(min-width: 768px)"
               type="image/jpeg"
             />
             <img src="./assets/images/mobile/image-gallery-orange.jpg" alt="" />
@@ -210,7 +235,7 @@
           <picture>
             <source
               srcset="./assets/images/desktop/image-gallery-cone.jpg"
-              media="(min-width: 992px)"
+              media="(min-width: 768px)"
               type="image/jpeg"
             />
             <img src="./assets/images/mobile/image-gallery-cone.jpg" alt="" />
@@ -218,7 +243,7 @@
           <picture>
             <source
               srcset="./assets/images/desktop/image-gallery-sugarcubes.jpg"
-              media="(min-width: 992px)"
+              media="(min-width: 768px)"
               type="image/jpeg"
             />
             <img
