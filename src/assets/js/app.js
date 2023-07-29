@@ -36,9 +36,6 @@ function animateArticle(selector, translateXValue, delay = 0) {
   });
 }
 
-animateArticle("#article-1", -600);
-animateArticle("#article-2", 600, 0.5);
-
 function animateTestimonials() {
   gsap.from("#testimonials", {
     opacity: 0,
@@ -59,4 +56,8 @@ function animateTestimonials() {
   });
 }
 
-animateTestimonials();
+setTimeout(() => {
+  animateArticle("#article-1", -600);
+  animateArticle("#article-2", 600, 0.5);
+  animateTestimonials();
+}, 500);
