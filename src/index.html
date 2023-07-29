@@ -29,10 +29,10 @@
     <section
       class="bg-[#3EBFFF] md:bg-[url('../images/desktop/image-header.jpg')] bg-[url(../images/mobile/image-header.jpg)] bg-cover bg-center h-screen"
     >
-      <header class="m-auto w-[95%] py-6">
+      <header class="relative m-auto w-[90%] py-6">
         <div class="flex justify-between items-center">
           <div>
-            <img src="./assets/images/logo.svg" alt="Sunnyside" />
+            <img src="./assets/images/logo.svg" alt="Sunnyside header" />
           </div>
           <nav class="hidden md:flex md:items-center md:gap-12">
             <ul class="flex gap-12 font-[600] text-neu-white">
@@ -47,13 +47,33 @@
               Contact
             </button>
           </nav>
-          <button class="md:hidden" type="button" aria-label="Open menu">
+          <button
+            id="menu-btn"
+            class="md:hidden"
+            type="button"
+            aria-label="Open menu"
+          >
             <img
               src="./assets/images/icon-hamburger.svg"
               alt="hamburger button"
             />
           </button>
         </div>
+        <nav
+          id="menu"
+          class="hidden h-[320px] grid place-items-center z-10 py-6 absolute translate-x-[-50%] left-1/2 bg-neu-white mt-12 p-2 w-full text-center after:content-[' '] after:w-[50px] after:aspect-square after:right-0 after:-top-6 after:block after:absolute after:border-r-[35px] after:border-r-neu-white after:border-t-[45px] after:border-t-transparent"
+        >
+          <ul class="text-neu-dark-grayish-blue grid gap-8">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">Projects</a></li>
+          </ul>
+          <button
+            class="px-8 py-4 text-[0.9rem] uppercase p-4 rounded-[2rem] bg-pri-yellow font-frauces font-extrabold"
+          >
+            Contact
+          </button>
+        </nav>
       </header>
       <div class="grid place-items-center md:h-[54%] h-[70%] mx-4">
         <h1
@@ -286,7 +306,7 @@
         </section>
       </div>
     </main>
-    <footer class="bg-[#68B1A2]">
+    <footer class="bg-[#68B1A2] brightness-125">
       <div
         class="text-pri-dark-desaturated-cyan grid place-items-center gap-16 py-16"
       >
@@ -321,44 +341,29 @@
           </ul>
         </div>
         <div class="flex gap-8">
-          <a
-            class="outline-none transition-colors hover:text-neu-white focus:text-neu-white"
-            href="#"
-            aria-hidden="true"
+          <a class="group outline-none" href="#" aria-hidden="true"
             ><img
-              class=""
+              class="transition-all group-hover:brightness-0 group-hover:invert group-focus:brightness-0 group-focus:invert"
               src="./assets/images/icon-facebook.svg"
               alt="facebook"
           /></a>
-          <a
-            class="outline-none transition-colors hover:text-neu-white focus:text-neu-white"
-            href="#"
-            aria-hidden="true"
-          >
+          <a class="group outline-none" href="#" aria-hidden="true">
             <img
-              class=""
+              class="transition-all group-hover:brightness-0 group-hover:invert group-focus:brightness-0 group-focus:invert"
               src="./assets/images/icon-instagram.svg"
               alt="instagram"
             />
           </a>
-          <a
-            class="outline-none transition-colors hover:text-neu-white focus:text-neu-white"
-            href="#"
-            aria-hidden="true"
-          >
+          <a class="group outline-none" href="#" aria-hidden="true">
             <img
-              class=""
+              class="transition-all group-hover:brightness-0 group-hover:invert group-focus:brightness-0 group-focus:invert"
               src="./assets/images/icon-twitter.svg"
               alt="twitter"
             />
           </a>
-          <a
-            class="outline-none transition-colors hover:text-neu-white focus:text-neu-white"
-            href="#"
-            aria-hidden="true"
-          >
+          <a class="group outline-none" href="#" aria-hidden="true">
             <img
-              class=""
+              class="transition-all group-hover:brightness-0 group-hover:invert group-focus:brightness-0 group-focus:invert"
               src="./assets/images/icon-pinterest.svg"
               alt="pinterest"
             />
